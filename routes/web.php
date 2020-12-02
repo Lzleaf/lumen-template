@@ -11,6 +11,15 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
+$api = app('Dingo\Api\Routing\Router');
+$api->version('v1', ['middleware' => 'auth'], function ($api) {
+   $api->get('/', function () {
+       return [
+           'status' => 200,
+           'message' => 'success',
+           'data' => [
+               'name' => 'Leaf'
+           ]
+       ];
+   });
 });
