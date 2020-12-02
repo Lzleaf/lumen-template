@@ -11,6 +11,7 @@
         "phpdocumentor/reflection": "^2.0",
         "phpdocumentor/reflection-common": "^1.0",
         "phpdocumentor/reflection-docblock": "^3.0",
+        "spatie/laravel-permission": "^3.18",
         "tymon/jwt-auth": "dev-develop"
     },
     "require-dev": {
